@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_JVyg0RjeEeKxlqG9GqIdMA" modelName="top" defined="true" sourceFileRelativePath="GeneratorMA.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_JVyg0hjeEeKxlqG9GqIdMA" portName="out" portType="OUTPUT_PORT" incomingLinks="_JVyg4RjeEeKxlqG9GqIdMA"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_JVyg0xjeEeKxlqG9GqIdMA" instanceName="Generator">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_JVyg1BjeEeKxlqG9GqIdMA" modelName="GeneratorType" defined="true" sourceFileRelativePath="GeneratorType.cpp">
+        <ports xmi:type="OutputAtomicPort" xmi:id="_JVyg1RjeEeKxlqG9GqIdMA" portName="out" portType="OUTPUT_PORT" outgoingLinks="_JVyg4RjeEeKxlqG9GqIdMA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_JVyg1hjeEeKxlqG9GqIdMA" portName="msgCreated" portType="OUTPUT_PORT"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_JVyg1xjeEeKxlqG9GqIdMA" name="ME"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_JVyg2BjeEeKxlqG9GqIdMA" name="MAX"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_JVyg2RjeEeKxlqG9GqIdMA" name="distribution"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_JVyg2hjeEeKxlqG9GqIdMA" name="initial"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_JVyg2xjeEeKxlqG9GqIdMA" name="increment"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_JVyg3BjeEeKxlqG9GqIdMA" name="ME" value="2"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_JVyg3RjeEeKxlqG9GqIdMA" name="MAX" value="3"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_JVyg3hjeEeKxlqG9GqIdMA" name="distribution"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_JVyg3xjeEeKxlqG9GqIdMA" name="initial"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_JVyg4BjeEeKxlqG9GqIdMA" name="increment"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_JVyg4RjeEeKxlqG9GqIdMA" target="_JVyg0hjeEeKxlqG9GqIdMA" source="_JVyg1RjeEeKxlqG9GqIdMA"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_JVyg4hjeEeKxlqG9GqIdMA" type="DEVS" element="_JVyg0RjeEeKxlqG9GqIdMA" name="GeneratorMA.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_JVyg4xjeEeKxlqG9GqIdMA"/>
+  </notation:Diagram>
+</xmi:XMI>

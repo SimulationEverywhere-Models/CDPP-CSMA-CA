@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_QwLycBi1EeKqJIbQgm8IKA" modelName="top" defined="true" sourceFileRelativePath="TransducerMA.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_QwLycRi1EeKqJIbQgm8IKA" portName="msg_gen" outgoingLinks="_QwLyexi1EeKqJIbQgm8IKA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_QwLychi1EeKqJIbQgm8IKA" portName="msg_sent" outgoingLinks="_QwLyfBi1EeKqJIbQgm8IKA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_QwLycxi1EeKqJIbQgm8IKA" portName="throughput" portType="OUTPUT_PORT" incomingLinks="_QwLyfRi1EeKqJIbQgm8IKA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_QwLydBi1EeKqJIbQgm8IKA" portName="latency" portType="OUTPUT_PORT" incomingLinks="_QwLyfhi1EeKqJIbQgm8IKA"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_QwLydRi1EeKqJIbQgm8IKA" instanceName="T">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_QwLydhi1EeKqJIbQgm8IKA" modelName="TransducerType" defined="true" sourceFileRelativePath="TransducerType.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_QwLydxi1EeKqJIbQgm8IKA" portName="msg_gen" incomingLinks="_QwLyexi1EeKqJIbQgm8IKA"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_QwLyeBi1EeKqJIbQgm8IKA" portName="msg_sent" incomingLinks="_QwLyfBi1EeKqJIbQgm8IKA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_QwLyeRi1EeKqJIbQgm8IKA" portName="latency" portType="OUTPUT_PORT" outgoingLinks="_QwLyfhi1EeKqJIbQgm8IKA"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_QwLyehi1EeKqJIbQgm8IKA" portName="throughput" portType="OUTPUT_PORT" outgoingLinks="_QwLyfRi1EeKqJIbQgm8IKA"/>
+      </modelType>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_QwLyexi1EeKqJIbQgm8IKA" target="_QwLydxi1EeKqJIbQgm8IKA" source="_QwLycRi1EeKqJIbQgm8IKA"/>
+    <links xmi:type="CoupledLink" xmi:id="_QwLyfBi1EeKqJIbQgm8IKA" target="_QwLyeBi1EeKqJIbQgm8IKA" source="_QwLychi1EeKqJIbQgm8IKA"/>
+    <links xmi:type="CoupledLink" xmi:id="_QwLyfRi1EeKqJIbQgm8IKA" target="_QwLycxi1EeKqJIbQgm8IKA" source="_QwLyehi1EeKqJIbQgm8IKA"/>
+    <links xmi:type="CoupledLink" xmi:id="_QwLyfhi1EeKqJIbQgm8IKA" target="_QwLydBi1EeKqJIbQgm8IKA" source="_QwLyeRi1EeKqJIbQgm8IKA"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_QwMZgBi1EeKqJIbQgm8IKA" type="DEVS" element="_QwLycBi1EeKqJIbQgm8IKA" name="TransducerMA.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_QwNAkBi1EeKqJIbQgm8IKA"/>
+  </notation:Diagram>
+</xmi:XMI>

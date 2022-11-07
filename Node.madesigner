@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_45mZABjOEeK4vaOns1r9Zw" defined="true" sourceFileRelativePath="Node.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_45mZARjOEeK4vaOns1r9Zw" portName="busy" outgoingLinks="_45mZMxjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_45mZAhjOEeK4vaOns1r9Zw" portName="free" outgoingLinks="_45mZNBjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_45mZAxjOEeK4vaOns1r9Zw" portName="receive" outgoingLinks="_45mZNRjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_45mZBBjOEeK4vaOns1r9Zw" portName="debug" portType="OUTPUT_PORT" incomingLinks="_45mZNhjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_45mZBRjOEeK4vaOns1r9Zw" portName="send" portType="OUTPUT_PORT" incomingLinks="_45mZNxjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_45mZBhjOEeK4vaOns1r9Zw" portName="throughput" portType="OUTPUT_PORT" incomingLinks="_45mZOBjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_45mZBxjOEeK4vaOns1r9Zw" portName="latency" portType="OUTPUT_PORT" incomingLinks="_45mZORjOEeK4vaOns1r9Zw"/>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_45mZCBjOEeK4vaOns1r9Zw" instanceName="MAC">
+      <modelType xmi:type="CoupledModelType" xmi:id="_45mZCRjOEeK4vaOns1r9Zw" modelName="MAC">
+        <ports xmi:type="CoupledPort" xmi:id="_45mZChjOEeK4vaOns1r9Zw" portName="msg_in" incomingLinks="_45mZPBjOEeK4vaOns1r9Zw" outgoingLinks="_45mZGBjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="CoupledPort" xmi:id="_45mZCxjOEeK4vaOns1r9Zw" portName="receive" incomingLinks="_45mZNRjOEeK4vaOns1r9Zw" outgoingLinks="_45mZGRjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="CoupledPort" xmi:id="_45mZDBjOEeK4vaOns1r9Zw" portName="busy" incomingLinks="_45mZMxjOEeK4vaOns1r9Zw" outgoingLinks="_45mZGhjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="CoupledPort" xmi:id="_45mZDRjOEeK4vaOns1r9Zw" portName="free" incomingLinks="_45mZNBjOEeK4vaOns1r9Zw" outgoingLinks="_45mZHRjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="CoupledPort" xmi:id="_45mZDhjOEeK4vaOns1r9Zw" portName="msgSent" portType="OUTPUT_PORT" incomingLinks="_45mZHhjOEeK4vaOns1r9Zw" outgoingLinks="_45mZOhjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="CoupledPort" xmi:id="_45mZDxjOEeK4vaOns1r9Zw" portName="send" portType="OUTPUT_PORT" incomingLinks="_45mZIBjOEeK4vaOns1r9Zw" outgoingLinks="_45mZNxjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="CoupledPort" xmi:id="_45mZEBjOEeK4vaOns1r9Zw" portName="debug" portType="OUTPUT_PORT" incomingLinks="_45mZHxjOEeK4vaOns1r9Zw" outgoingLinks="_45mZNhjOEeK4vaOns1r9Zw"/>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_45mZERjOEeK4vaOns1r9Zw" instanceName="TR">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_45mZEhjOEeK4vaOns1r9Zw" modelName="TxRxControllerType" sourceFileRelativePath="TxRxControllerType.cpp"/>
+        </atomicModels>
+        <atomicModels xmi:type="AtomicModelInstance" xmi:id="_45mZExjOEeK4vaOns1r9Zw" instanceName="Buffer">
+          <modelType xmi:type="CPPAtomicModelType" xmi:id="_45mZFBjOEeK4vaOns1r9Zw" modelName="BufferType" defined="true" sourceFileRelativePath="BufferType.cpp">
+            <ports xmi:type="InputAtomicPort" xmi:id="_45mZFRjOEeK4vaOns1r9Zw" portName="msg_in" incomingLinks="_45mZGBjOEeK4vaOns1r9Zw"/>
+            <ports xmi:type="InputAtomicPort" xmi:id="_45mZFhjOEeK4vaOns1r9Zw" portName="done_in" incomingLinks="_45mZGxjOEeK4vaOns1r9Zw"/>
+            <ports xmi:type="OutputAtomicPort" xmi:id="_45mZFxjOEeK4vaOns1r9Zw" portName="job_out" portType="OUTPUT_PORT" outgoingLinks="_45mZHBjOEeK4vaOns1r9Zw"/>
+          </modelType>
+        </atomicModels>
+        <links xmi:type="CoupledLink" xmi:id="_45mZGBjOEeK4vaOns1r9Zw" target="_45mZFRjOEeK4vaOns1r9Zw" source="_45mZChjOEeK4vaOns1r9Zw"/>
+        <links xmi:type="CoupledLink" xmi:id="_45mZGRjOEeK4vaOns1r9Zw" source="_45mZCxjOEeK4vaOns1r9Zw"/>
+        <links xmi:type="CoupledLink" xmi:id="_45mZGhjOEeK4vaOns1r9Zw" source="_45mZDBjOEeK4vaOns1r9Zw"/>
+        <links xmi:type="CoupledLink" xmi:id="_45mZGxjOEeK4vaOns1r9Zw" target="_45mZFhjOEeK4vaOns1r9Zw"/>
+        <links xmi:type="CoupledLink" xmi:id="_45mZHBjOEeK4vaOns1r9Zw" source="_45mZFxjOEeK4vaOns1r9Zw"/>
+        <links xmi:type="CoupledLink" xmi:id="_45mZHRjOEeK4vaOns1r9Zw" source="_45mZDRjOEeK4vaOns1r9Zw"/>
+        <links xmi:type="CoupledLink" xmi:id="_45mZHhjOEeK4vaOns1r9Zw" target="_45mZDhjOEeK4vaOns1r9Zw"/>
+        <links xmi:type="CoupledLink" xmi:id="_45mZHxjOEeK4vaOns1r9Zw" target="_45mZEBjOEeK4vaOns1r9Zw"/>
+        <links xmi:type="CoupledLink" xmi:id="_45mZIBjOEeK4vaOns1r9Zw" target="_45mZDxjOEeK4vaOns1r9Zw"/>
+      </modelType>
+    </coupledModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_45mZIRjOEeK4vaOns1r9Zw" instanceName="Gen">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_45mZIhjOEeK4vaOns1r9Zw" modelName="GeneratorType" defined="true" sourceFileRelativePath="GeneratorType.cpp">
+        <ports xmi:type="OutputAtomicPort" xmi:id="_45mZIxjOEeK4vaOns1r9Zw" portName="out" portType="OUTPUT_PORT" outgoingLinks="_45mZPBjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_45mZJBjOEeK4vaOns1r9Zw" portName="msgCreated" portType="OUTPUT_PORT" outgoingLinks="_45mZOxjOEeK4vaOns1r9Zw"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_45mZJRjOEeK4vaOns1r9Zw" name="ME"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_45mZJhjOEeK4vaOns1r9Zw" name="distribution"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_45mZJxjOEeK4vaOns1r9Zw" name="initial"/>
+        <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_45mZKBjOEeK4vaOns1r9Zw" name="increment"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_45mZKRjOEeK4vaOns1r9Zw" name="ME" value="1"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_45mZKhjOEeK4vaOns1r9Zw" name="distribution"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_45mZKxjOEeK4vaOns1r9Zw" name="initial"/>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_45mZLBjOEeK4vaOns1r9Zw" name="increment"/>
+    </atomicModels>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_45mZLRjOEeK4vaOns1r9Zw" instanceName="T">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_45mZLhjOEeK4vaOns1r9Zw" modelName="TransducerType" defined="true" sourceFileRelativePath="TransducerType.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_45mZLxjOEeK4vaOns1r9Zw" portName="msg_gen" incomingLinks="_45mZOxjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_45mZMBjOEeK4vaOns1r9Zw" portName="msg_sent" incomingLinks="_45mZOhjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_45mZMRjOEeK4vaOns1r9Zw" portName="latency" portType="OUTPUT_PORT" outgoingLinks="_45mZORjOEeK4vaOns1r9Zw"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_45mZMhjOEeK4vaOns1r9Zw" portName="throughput" portType="OUTPUT_PORT" outgoingLinks="_45mZOBjOEeK4vaOns1r9Zw"/>
+      </modelType>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_45mZMxjOEeK4vaOns1r9Zw" target="_45mZDBjOEeK4vaOns1r9Zw" source="_45mZARjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_45mZNBjOEeK4vaOns1r9Zw" target="_45mZDRjOEeK4vaOns1r9Zw" source="_45mZAhjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_45mZNRjOEeK4vaOns1r9Zw" target="_45mZCxjOEeK4vaOns1r9Zw" source="_45mZAxjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_45mZNhjOEeK4vaOns1r9Zw" target="_45mZBBjOEeK4vaOns1r9Zw" source="_45mZEBjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_45mZNxjOEeK4vaOns1r9Zw" target="_45mZBRjOEeK4vaOns1r9Zw" source="_45mZDxjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_45mZOBjOEeK4vaOns1r9Zw" target="_45mZBhjOEeK4vaOns1r9Zw" source="_45mZMhjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_45mZORjOEeK4vaOns1r9Zw" target="_45mZBxjOEeK4vaOns1r9Zw" source="_45mZMRjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_45mZOhjOEeK4vaOns1r9Zw" target="_45mZMBjOEeK4vaOns1r9Zw" source="_45mZDhjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_45mZOxjOEeK4vaOns1r9Zw" target="_45mZLxjOEeK4vaOns1r9Zw" source="_45mZJBjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_45mZPBjOEeK4vaOns1r9Zw" target="_45mZChjOEeK4vaOns1r9Zw" source="_45mZIxjOEeK4vaOns1r9Zw"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_45nAEBjOEeK4vaOns1r9Zw" type="DEVS" element="_45mZABjOEeK4vaOns1r9Zw" name="Node.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_45nAERjOEeK4vaOns1r9Zw"/>
+  </notation:Diagram>
+</xmi:XMI>

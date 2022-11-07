@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_6kX4wBjOEeK4vaOns1r9Zw" defined="true" sourceFileRelativePath="TxRxControllerMA.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_6kX4wRjOEeK4vaOns1r9Zw" portName="send" portType="OUTPUT_PORT" incomingLinks="_6kX40BjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_6kX4whjOEeK4vaOns1r9Zw" portName="done" portType="OUTPUT_PORT" incomingLinks="_6kX4zxjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_6kX4wxjOEeK4vaOns1r9Zw" portName="msgSent" portType="OUTPUT_PORT" incomingLinks="_6kX4zhjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_6kX4xBjOEeK4vaOns1r9Zw" portName="free" outgoingLinks="_6kX4yhjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_6kX4xRjOEeK4vaOns1r9Zw" portName="busy" outgoingLinks="_6kX4yxjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_6kX4xhjOEeK4vaOns1r9Zw" portName="receive" outgoingLinks="_6kX4zBjOEeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_6kX4xxjOEeK4vaOns1r9Zw" portName="dataIn" outgoingLinks="_6kX4zRjOEeK4vaOns1r9Zw"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_6kX4yBjOEeK4vaOns1r9Zw" instanceName="TxRx">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_6kX4yRjOEeK4vaOns1r9Zw" modelName="TxRxControllerType" sourceFileRelativePath="TxRxControllerType.cpp"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_6kX4yhjOEeK4vaOns1r9Zw" source="_6kX4xBjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_6kX4yxjOEeK4vaOns1r9Zw" source="_6kX4xRjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_6kX4zBjOEeK4vaOns1r9Zw" source="_6kX4xhjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_6kX4zRjOEeK4vaOns1r9Zw" source="_6kX4xxjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_6kX4zhjOEeK4vaOns1r9Zw" target="_6kX4wxjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_6kX4zxjOEeK4vaOns1r9Zw" target="_6kX4whjOEeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_6kX40BjOEeK4vaOns1r9Zw" target="_6kX4wRjOEeK4vaOns1r9Zw"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_6kYf0BjOEeK4vaOns1r9Zw" type="DEVS" element="_6kX4wBjOEeK4vaOns1r9Zw" name="TxRxControllerMA.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_6kYf0RjOEeK4vaOns1r9Zw"/>
+  </notation:Diagram>
+</xmi:XMI>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_c89iQBi-EeK4vaOns1r9Zw" modelName="top" defined="true" sourceFileRelativePath="BufferMA.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_c89iQRi-EeK4vaOns1r9Zw" portName="job_out" portType="OUTPUT_PORT" incomingLinks="_c89iTBi-EeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_c89iQhi-EeK4vaOns1r9Zw" portName="msg_in" outgoingLinks="_c89iShi-EeK4vaOns1r9Zw"/>
+    <ports xmi:type="CoupledPort" xmi:id="_c89iQxi-EeK4vaOns1r9Zw" portName="done_in" outgoingLinks="_c89iSxi-EeK4vaOns1r9Zw"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_c89iRBi-EeK4vaOns1r9Zw" instanceName="Buffer">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_c89iRRi-EeK4vaOns1r9Zw" modelName="BufferType" defined="true" sourceFileRelativePath="BufferType.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_c89iRhi-EeK4vaOns1r9Zw" portName="msg_in" incomingLinks="_c89iShi-EeK4vaOns1r9Zw"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_c89iRxi-EeK4vaOns1r9Zw" portName="done_in" incomingLinks="_c89iSxi-EeK4vaOns1r9Zw"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_c89iSBi-EeK4vaOns1r9Zw" portName="job_out" portType="OUTPUT_PORT" outgoingLinks="_c89iTBi-EeK4vaOns1r9Zw"/>
+      </modelType>
+      <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_c89iSRi-EeK4vaOns1r9Zw" name="preparation" value="00:00:10:000"/>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_c89iShi-EeK4vaOns1r9Zw" target="_c89iRhi-EeK4vaOns1r9Zw" source="_c89iQhi-EeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_c89iSxi-EeK4vaOns1r9Zw" target="_c89iRxi-EeK4vaOns1r9Zw" source="_c89iQxi-EeK4vaOns1r9Zw"/>
+    <links xmi:type="CoupledLink" xmi:id="_c89iTBi-EeK4vaOns1r9Zw" target="_c89iQRi-EeK4vaOns1r9Zw" source="_c89iSBi-EeK4vaOns1r9Zw"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_c8-JUBi-EeK4vaOns1r9Zw" type="DEVS" element="_c89iQBi-EeK4vaOns1r9Zw" name="BufferMA.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_c8-JURi-EeK4vaOns1r9Zw"/>
+  </notation:Diagram>
+</xmi:XMI>

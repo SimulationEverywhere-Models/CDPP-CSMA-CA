@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_DwWQEBfSEeK4J-Elco3NBA" defined="true" sourceFileRelativePath="TxRxController.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_DwWQERfSEeK4J-Elco3NBA" portName="send" portType="OUTPUT_PORT" incomingLinks="_DwW3IBfSEeK4J-Elco3NBA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_DwWQEhfSEeK4J-Elco3NBA" portName="done" portType="OUTPUT_PORT" incomingLinks="_DwWQHxfSEeK4J-Elco3NBA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_DwWQExfSEeK4J-Elco3NBA" portName="msgSent" portType="OUTPUT_PORT" incomingLinks="_DwWQHhfSEeK4J-Elco3NBA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_DwWQFBfSEeK4J-Elco3NBA" portName="free" outgoingLinks="_DwWQGhfSEeK4J-Elco3NBA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_DwWQFRfSEeK4J-Elco3NBA" portName="busy" outgoingLinks="_DwWQGxfSEeK4J-Elco3NBA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_DwWQFhfSEeK4J-Elco3NBA" portName="receive" outgoingLinks="_DwWQHBfSEeK4J-Elco3NBA"/>
+    <ports xmi:type="CoupledPort" xmi:id="_DwWQFxfSEeK4J-Elco3NBA" portName="dataIn" outgoingLinks="_DwWQHRfSEeK4J-Elco3NBA"/>
+    <atomicModels xmi:type="AtomicModelInstance" xmi:id="_DwWQGBfSEeK4J-Elco3NBA" instanceName="TxRx">
+      <modelType xmi:type="CPPAtomicModelType" xmi:id="_DwWQGRfSEeK4J-Elco3NBA" modelName="TxRxControllerType" defined="true" sourceFileRelativePath="TxRxControllerType.cpp">
+        <ports xmi:type="InputAtomicPort" xmi:id="_UWezQRh_EeKqJIbQgm8IKA" portName="free"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_UWezQhh_EeKqJIbQgm8IKA" portName="busy"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_UWezQxh_EeKqJIbQgm8IKA" portName="receive"/>
+        <ports xmi:type="InputAtomicPort" xmi:id="_UWezRBh_EeKqJIbQgm8IKA" portName="dataIn"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_UWezRRh_EeKqJIbQgm8IKA" portName="send" portType="OUTPUT_PORT"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_UWezRhh_EeKqJIbQgm8IKA" portName="msgSent" portType="OUTPUT_PORT"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_UWezRxh_EeKqJIbQgm8IKA" portName="done" portType="OUTPUT_PORT"/>
+        <ports xmi:type="OutputAtomicPort" xmi:id="_UWezSBh_EeKqJIbQgm8IKA" portName="debug" portType="OUTPUT_PORT"/>
+      </modelType>
+    </atomicModels>
+    <links xmi:type="CoupledLink" xmi:id="_DwWQGhfSEeK4J-Elco3NBA" source="_DwWQFBfSEeK4J-Elco3NBA"/>
+    <links xmi:type="CoupledLink" xmi:id="_DwWQGxfSEeK4J-Elco3NBA" source="_DwWQFRfSEeK4J-Elco3NBA"/>
+    <links xmi:type="CoupledLink" xmi:id="_DwWQHBfSEeK4J-Elco3NBA" source="_DwWQFhfSEeK4J-Elco3NBA"/>
+    <links xmi:type="CoupledLink" xmi:id="_DwWQHRfSEeK4J-Elco3NBA" source="_DwWQFxfSEeK4J-Elco3NBA"/>
+    <links xmi:type="CoupledLink" xmi:id="_DwWQHhfSEeK4J-Elco3NBA" target="_DwWQExfSEeK4J-Elco3NBA"/>
+    <links xmi:type="CoupledLink" xmi:id="_DwWQHxfSEeK4J-Elco3NBA" target="_DwWQEhfSEeK4J-Elco3NBA"/>
+    <links xmi:type="CoupledLink" xmi:id="_DwW3IBfSEeK4J-Elco3NBA" target="_DwWQERfSEeK4J-Elco3NBA"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_DwW3IRfSEeK4J-Elco3NBA" type="DEVS" element="_DwWQEBfSEeK4J-Elco3NBA" name="TxRxController.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_DwW3IhfSEeK4J-Elco3NBA"/>
+  </notation:Diagram>
+</xmi:XMI>
